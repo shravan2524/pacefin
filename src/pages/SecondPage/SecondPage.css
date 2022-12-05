@@ -1,0 +1,10 @@
+body{
+    background-image: url("../images/bg.jpeg");
+}
+
+#logout button>div{
+    display: none;
+}
+#logout button span{
+    padding: 10px !important;
+}

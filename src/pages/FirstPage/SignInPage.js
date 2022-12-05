@@ -7,11 +7,14 @@ import { VscGithub } from "react-icons/vsc";
 import { GoogleLogin, GoogleLogout } from 'react-google-login';
 import { gapi } from 'gapi-script';
 import { useEffect, useState } from 'react';
+import { useNavigate } from "react-router-dom";
 import ErrorPage from '../../components/ErrorPage';
 import Blog from '../SecondPage/Blog';
+import "./FirstPage.css";
 
 const SignInPage = () => {
     const [profile, setProfile] = useState([]);
+    const navigate = useNavigate();
     const defaultOptions = {
         loop: true,
         autoplay: true,
@@ -22,6 +25,9 @@ const SignInPage = () => {
     };
     const onSuccess = (res) => {
         setProfile(res.profileObj);
+        console.log(res.profileObj, profile, "hjgfgdxgcjkhgfdxcv");
+        sessionStorage.setItem('profile', res.profile);
+        navigate("/blogs");
     };
 
     const onFailure = (err) => {
@@ -29,6 +35,7 @@ const SignInPage = () => {
     };
 
     const logOut = () => {
+        console.log(1);
         setProfile(null);
     };
     const clientId = '1068016891409-2ddb77j38g6sudbhurh3cmd6atiqb7st.apps.googleusercontent.com';
@@ -46,7 +53,7 @@ const SignInPage = () => {
         <div>
         {
             profile
-            ? <Blog clientId={clientId} logOut={logOut} />
+            ? <Blog clientId={clientId} logOut={logOut} profile={profile} />
             :  <div className='w-[30%] bg-white mx-auto mt-[10vh] p-10 rounded-lg'>
             <Lottie
                 options={defaultOptions}

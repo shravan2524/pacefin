@@ -8,6 +8,7 @@ import {
 import ErrorPage from './components/ErrorPage';
 import SignInPage from './pages/FirstPage/SignInPage';
 import SignUpPage from './pages/FirstPage/SignUpPage';
+import Blog from './pages/SecondPage/Blog';
 
 
 // ajkgha
@@ -19,6 +20,12 @@ const router = createBrowserRouter([
     element:<SignInPage />,
     errorElement: <ErrorPage />,
   },
+  {
+    path: "/blogs",
+    element:<Blog />,
+    errorElement: <ErrorPage />,
+  },
+
   {
     path: "/signup",
     element: <SignUpPage />,
