@@ -1,3 +1,47 @@
-body{
+#first{
     background-color: #644aa7 !important;
 }
+flex pt-2 mb-8  border-4 border-white
+    #card{
+        display: flex;
+  position: relative;
+  /* max-width: 262px; */
+  background: #fefefe;
+  border-radius: 4px;
+  /* margin: 12px; */
+  text-decoration: none;
+  /* z-index: 0; */
+  overflow: hidden;
+  /* margin-bottom: 5px; */
+    }
+    #card:hover{
+        transition: all 0.2s ease-out;
+    box-shadow: 0px 4px 8px rgba(38, 38, 38, 0.2);
+    /* top: -4px; */
+    padding: 2px;
+    /* border: 1px solid #cccccc; */
+    background-color: white;
+    }
+#card:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: -16px;
+    right: -16px;
+    background: #00838d;
+    height: 32px;
+    width: 32px;
+    border-radius: 32px;
+    transform: scale(2);
+    transform-origin: 50% 50%;
+    transition: transform 0.15s ease-out;
+      }
+    
+      #card:hover:before {
+        transform: scale(2.15);
+      }
+      #card:hover img{
+        transition: ease-in-out;
+        transition-duration: 300;
+        scale: 1.3;
+      }

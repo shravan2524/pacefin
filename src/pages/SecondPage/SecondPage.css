@@ -1,5 +1,8 @@
-body{
+#second{
     background-image: url("../images/bg.jpeg");
+    /* background-repeat: repeat-y; */
+    background-size: contain;
+    min-height: 100vh;
 }
 
 #logout button>div{
@@ -8,3 +11,13 @@ body{
 #logout button span{
     padding: 10px !important;
 }
+.progress-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 10px;
+    background: var(--red);
+    transform-origin: 0%;
+  }
+  
