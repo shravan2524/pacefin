@@ -1,6 +1,5 @@
 #second{
     background-image: url("../images/bg.jpeg");
-    /* background-repeat: repeat-y; */
     background-size: contain;
     min-height: 100vh;
 }

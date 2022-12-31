@@ -13,8 +13,6 @@ import Learn from './pages/SecondPage/Learn';
 import Bookmarks from './pages/SecondPage/Bookmarks';
 import UiKit from './pages/SecondPage/UiKit';
 import LainNya from './pages/SecondPage/LainNya';
-// ajkgha
-// sjdhjakd
 
 const router = createBrowserRouter([
   {
@@ -22,37 +20,37 @@ const router = createBrowserRouter([
     element:<SignInPage />,
     errorElement: <ErrorPage />,
   },
-  {
-    path: "/blogs",
-    element:<Blog />,
-    errorElement: <ErrorPage />,
-  },
+  // {
+  //   path: "/blogs",
+  //   element:<Blog />,
+  //   errorElement: <ErrorPage />,
+  // },
 
-  {
-    path: "/signup",
-    element: <SignUpPage />,
-    errorElement: <ErrorPage />,
-  },
-  {
-    path: "/learn",
-    element: <Learn />,
-    errorElement: <ErrorPage />,
-  },
-  {
-    path: "/bookmarks",
-    element: <Bookmarks />,
-    errorElement: <ErrorPage />,
-  },
-  {
-    path: "/uikit",
-    element: <UiKit />,
-    errorElement: <ErrorPage />,
-  },
-  {
-    path: "/lainnya",
-    element: <LainNya />,
-    errorElement: <ErrorPage />,
-  },
+  // {
+  //   path: "/signup",
+  //   element: <SignUpPage />,
+  //   errorElement: <ErrorPage />,
+  // },
+  // {
+  //   path: "/learn",
+  //   element: <Learn />,
+  //   errorElement: <ErrorPage />,
+  // },
+  // {
+  //   path: "/bookmarks",
+  //   element: <Bookmarks />,
+  //   errorElement: <ErrorPage />,
+  // },
+  // {
+  //   path: "/uikit",
+  //   element: <UiKit />,
+  //   errorElement: <ErrorPage />,
+  // },
+  // {
+  //   path: "/lainnya",
+  //   element: <LainNya />,
+  //   errorElement: <ErrorPage />,
+  // },
 ]);
 
 function App() {

@@ -1,15 +1,6 @@
 import React from "react";
 
-function Timeline(publishedAt) {
-
-    return (
-        <div>
-
-        </div>
-    )
-}
-
-export default function Card({ urlToImage, publishedAt, description, url, title }) {
+export default function Card({ urlToImage,  description, url, title }) {
     return (
         <>
                 <div className="my-2 border-4 border-white" id="card">
@@ -18,7 +9,7 @@ export default function Card({ urlToImage, publishedAt, description, url, title 
                         <img src={urlToImage} className="hover:scale-110 transition duration-300 ease-in-out" />
                     </div>
                     <div className="pt-4">
-                        {publishedAt}
+                    December, 2022
                     </div>
                     <div className="font-extrabold pt-2">
                         <span>
